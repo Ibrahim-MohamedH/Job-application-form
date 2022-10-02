@@ -142,7 +142,7 @@ function addApplicant() {
 
     const timing_div = document.createElement("h5");
     timing_div.textContent = `${time.substring(4,10)}, ${time.substring(11,15)}`
-    timing_div.classList.add("float-right")
+    timing_div.classList.add("float-sm-right")
     console.log
     // Append Created elements
     text_div.append(timing_div, h2, h4, h5);
