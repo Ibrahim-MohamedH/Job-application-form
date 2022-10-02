@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Another To-do List</title>
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- My CSS -->
+    <link id="styleMode" rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container mb-5 p-3">
+      <div class="row text-center header pb-5 justify-content-center">
+        <div class="col-md-1 col-4 order-md-1 order-2">
+          <i class="fa-solid fa-moon"></i>
+        </div>
+        <h1 class="col-md-11 col-11 order-md-2 order-1">Application Form</h1>
+      </div>
+      <div
+        id="alert-message"
+        class="row none alert alert-danger justify-content-between"
+      ></div>
+      <div class="row form-section justify-content-center">
+        <form class="justify-content-center">
+          <input
+            id="name"
+            class="col-12 p-2 mb-3"
+            type="text"
+            placeholder="Enter Your Name"
+            required
+          />
+          <input
+            id="img"
+            class="col-12 p-2 mb-3"
+            type="url"
+            placeholder="Enter your Picture URL"
+            required
+          />
+          <input
+            id="title"
+            class="col-12 p-2 mb-3"
+            type="text"
+            placeholder="Enter Job title"
+            required
+          />
+          <input
+            id="salary"
+            class="col-md-6 col-8 p-2 mb-3"
+            type="number"
+            placeholder="Enter your expected salary"
+            required
+          />
+          <button id="btn" class="btn float-right" type="submit">Apply</button>
+        </form>
+      </div>
+    </div>
+    <div class="container p-4">
+      <div class="row mb-4 p-4 justify-content-between">
+        <h3>Applicants:</h3>
+        <h6>Number of Applicants: <span>0</span></h6>
+      </div>
+      <div class="modal-like">
+        <img class="modal-like-img" src="./img/testimonial-1.jpg" alt="" />
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div
+        id="info-message"
+        class="row alert alert-info justify-content-center text-lg-left text-center"
+      >
+        No one applied yet, be the first one to apply!
+      </div>
+      <div id="applicants" class="row justify-content-center"></div>
+    </div>
+    <div id="top-arrow" class="none arrow-up">
+      <i class="fa-solid fa-arrow-up arrow-up"></i>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/jquery.slim.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- My JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
