@@ -22,10 +22,21 @@ body {
   color: white;
   opacity: 1;
 }
-#btn {
-  color: #fff;
-  background-color: rgb(119, 119, 119);
+
+.btn {
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgb(119, 119, 119) 50%,
+    rgb(80, 79, 79) 50%
+  );
+  background-size: 200%;
+  transition: 0.3s ease-out;
   border-color: rgb(119, 119, 119);
+}
+.btn:hover {
+  color: white;
+  background-position: right;
 }
 #applicants .applicant {
   position: relative;

@@ -19,10 +19,26 @@ body {
 #applicants .applicant {
   position: relative;
 }
+
 #btn {
   color: white;
   background-color: rgb(23, 162, 184);
   border-color: rgb(23, 162, 184);
+}
+.btn {
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgb(23, 162, 184) 50%,
+    rgb(17, 120, 136) 50%
+  );
+  background-size: 200%;
+  transition: 0.3s ease-out;
+  border-color: rgb(23, 162, 184);
+}
+.btn:hover {
+  color: white;
+  background-position: right;
 }
 #applicants .applicant img {
   box-shadow: 0px 0px 20px black;
