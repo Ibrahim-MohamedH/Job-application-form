@@ -104,3 +104,6 @@ body {
 #top-arrow:hover {
   transform: translateY(-10%);
 }
+.fa-solid {
+  cursor: pointer;
+}
