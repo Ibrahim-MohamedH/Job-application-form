@@ -38,6 +38,13 @@ body {
   color: white;
   background-position: right;
 }
+.btn:focus {
+  box-shadow: none;
+  opacity: 0.8;
+}
+.ap-img {
+  cursor: pointer;
+}
 #applicants .applicant {
   position: relative;
 }

@@ -51,6 +51,10 @@ window.addEventListener("load", () =>{
   let title = document.querySelector("#title");
   let salary = document.querySelector("#salary");
   
+  // loading spinner
+  const spinner = document.querySelector(".loading-spinner")
+  spinner.classList.add("none")
+
   form.addEventListener("submit", (e) =>{
     e.preventDefault();
 
@@ -142,7 +146,7 @@ function addApplicant() {
 
     const timing_div = document.createElement("h5");
     timing_div.textContent = `${time.substring(4,10)}, ${time.substring(11,15)}`
-    timing_div.classList.add("float-sm-right")
+    timing_div.classList.add("float-lg-right")
     console.log
     // Append Created elements
     text_div.append(timing_div, h2, h4, h5);
